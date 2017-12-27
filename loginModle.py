@@ -64,7 +64,7 @@ def getLyric(songSid,songSsid):
    return json.loads(reciveOfFM.text)
 
 rmSwitch=0; #1代表删除临时的音频文件,0代表保留临时的音频文件
-loginDict=loginFM("sikegrbd@163.com","a154828813")
+loginDict=loginFM("sikegrbd@163.com","password")
 channelDict=getChanelList()
 for i in range(len(channelDict["groups"])):
    print("group_id: "+str(channelDict["groups"][i]["group_id"]))
